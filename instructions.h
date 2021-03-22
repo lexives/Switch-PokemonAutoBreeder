@@ -156,6 +156,9 @@ static const command_t next_round_steps[] = {
     { hang, 20 }
 };
 
-static const uint16_t breeding_duration = 3000;
+static const uint16_t default_breeding_duration = 3000; // unknown egg cycles
+static const uint16_t breeding_duration_charmander = 4000; // 20 egg cycles
+
+static const uint16_t breeding_duration = breeding_duration_charmander;
 
 #endif

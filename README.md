@@ -19,6 +19,12 @@ After compiling and flashing onto the micro-controller, you can just plug the mi
 
 - On the menu, you should make sure that the cursor is on the Town Map icon. So when you press X button, it automatically lands on Town Map. The script will assume that by simply pressing X, and several A, it will fly to the Bridge Field in front of the Nursery NPC. 
 
+- EDIT BY ME: You are not on your bike.
+
+#### Egg Cycles
+
+To adjust how long the program will wait before attempting to pick up the next egg, edit the `breeding_duration` variable at the bottom of `instructions.h`.
+
 
 ### Wait, what?
 On June 20, 2017, Nintendo released System Update v3.0.0 for the Nintendo Switch. Along with a number of additional features that were advertised or noted in the changelog, additional hidden features were added. One of those features allows for the use of compatible USB controllers on the Nintendo Switch, such as the Pokken Tournament Pro Pad.
