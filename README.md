@@ -26,6 +26,19 @@ After compiling and flashing onto the micro-controller, you can just plug the mi
 To adjust how long the program will wait before attempting to pick up the next egg, edit the `breeding_duration` variable at the bottom of `instructions.h`.
 
 
+### TLDR: Flashing Joystick.hex
+
+1. Plug in the arduino to the computer with a USB.
+2. Use a wire to touch the RESET and GROUND pins together (in the cluser of 6 pins at the top left of the board, it's the two pins on the left side).
+3. Open a terminal and navigate to the root folder of this repo.
+4. If you haven't yet compiled the program, do so by typing `make`
+5. Type the following three commands:
+    ```
+    sudo dfu-programmer atmega16u2 erase
+    sudo dfu-programmer atmega16u2 flash Joystick.hex
+    sudo dfu-programmer atmega16u2 reset
+    ```
+
 ### Wait, what?
 On June 20, 2017, Nintendo released System Update v3.0.0 for the Nintendo Switch. Along with a number of additional features that were advertised or noted in the changelog, additional hidden features were added. One of those features allows for the use of compatible USB controllers on the Nintendo Switch, such as the Pokken Tournament Pro Pad.
 

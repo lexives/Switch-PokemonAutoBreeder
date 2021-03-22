@@ -159,6 +159,13 @@ static const command_t next_round_steps[] = {
 static const uint16_t default_breeding_duration = 3000; // unknown egg cycles
 static const uint16_t breeding_duration_charmander = 4000; // 20 egg cycles
 
-static const uint16_t breeding_duration = breeding_duration_charmander;
+/**
+ * Default was 3000
+ * 
+ * Pokemon      | Egg Cycles | Duration
+ * ====================================
+ * Charmander   | 20         | 3500
+ **/
+static const uint16_t breeding_duration = 3500;
 
 #endif
